@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN FORM</title>
+    <style>
+        * {
+           margin: 0; 
+           padding: 0;
+        }
+        header 
+        {
+            background-color: burlywood;
+            height: 30px;
+            text-align: center;
+            padding: 10px;
+        }
+        header h3 {
+            color: #fff;
+        } 
+
+        .pan-form {
+            padding: 20px;
+        }
+
+        .pan-form-table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .pan-form-table td,  .pan-form-table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .pan-form-table tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        .pan-form-table tr:hover {
+            background-color: #ddd;
+        }
+       
+        .pan-form-table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            color: #5a5959;
+        }
+        .enclosed-certificate {
+            width: 50%;
+        }
+
+        .submit-td {
+            text-align: center;
+        }
+
+        li {
+        display: list-item;
+        list-style-position: inside;
+        }
+
+        ol h3 {
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+   
+<header>
+    <h3>PAN Card Application</h3>
+</header>
+<div class="pan-form">
+<ol>
+    <h3><li>Personal Information</h3></li>
+    <table class="pan-form-table">
+        <tr>
+            <th>
+                Whether citizen of India  
+            </th>
+            <td colspan="3">
+                <input type="radio" name="citizen" /> Yes
+                <input type="radio" name="citizen"  /> No
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Permanant Account Number
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        
+     
+            <th>
+                Title
+            </th>
+            <td>
+                <input type="checkbox" /> Shri/Mr
+                <input type="checkbox" /> Smt./Mrs
+                <input type="checkbox" /> Kumari/Ms  
+                <input type="checkbox" /> M/s
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Name of Body of Individual
+            </th>
+            <td colspan="3">
+                <input type="text" /><br>
+                <small>Name as you would like it printed on the card</small>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Date of Birth
+            </th>
+            <td>
+                <input type="date" />
+            </td>
+       
+            <th>
+               Gender
+            </th>
+            <td>
+                <input type="radio" name="gender" /> Male
+                <input type="radio" name="gender" /> Female
+            </td>
+        </tr>
+    </table>
+
+    <h3><li>Address for Communication</h3></li>
+    <table class="pan-form-table">
+        <tr>
+            <th>
+                Address for Communication
+            </th>
+            <td colspan="3">
+                <input type="radio" name="address" /> Residential
+                <input type="radio" name="address" /> Office
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Flat/Door/Block No.
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+     
+            <th>
+                Name of Premises/Building/Village
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Road/Street/Lane/Post Office
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+      
+            <th>
+                Area/Locality/Taluka/Sub-Division
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Town/City/District
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+     
+            <th>
+                State/Union Territory
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                PIN (Indicating PIN is mandatory)
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+       
+            <th>
+                Country
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+       
+            <th colspan="4">
+                Address for Permanant
+            </th>
+           
+        </tr>
+        <tr>
+            <th>
+                Flat/Door/Block No.
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        
+            <th>
+                Name of Premises/Building/Village
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Road/Street/Lane/Post Office
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+     
+            <th>
+                Area/Locality/Taluka/Sub-Division
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Town/City/District
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+       
+            <th>
+                State/Union Territory
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                PIN (Indicating PIN is mandatory)
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+       
+            <th>
+                Country
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+    </table>
+
+    <h3><li>Other Details</h3></li>
+    <table class="pan-form-table">
+        <tr>
+            <th>
+                Telephone No.
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+      
+            <th>
+                E-mail ID
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                AADHAAR number (if allotted)
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+     
+            <th>
+                GSTN
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Mention other Permanent Account Numbers (PANs) if any,inadvertently allotted to you. Submit proof of surrendered PAN(s) along with the application.</th>
+           
+        </tr>
+        <tr>
+            <th>
+                PAN1
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+     
+            <th>
+                PAN2
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                PAN3
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+     
+            <th>
+                PAN4
+            </th>
+            <td>
+                <input type="text" />
+            </td>
+        </tr>
+    </table>
+
+    <h3><li>Verification</h3></li>
+     <table class="pan-form-table">
+        
+        <tr>
+            <td  colspan="4">
+               <p>
+                I/We <input type="text" /> the applicant,in the capacity of, 
+
+                <select>
+                    <option value="">-- Please Select --
+                    </option><option value="04"> Authorized Signatory
+                    </option>
+                </select>     
+
+                do hereby declare that what is stated above is true to the best of my information and belief.
+               
+            
+       
+                Place      
+                <input type="text" />
+            </p>
+            </td>
+           
+        </tr>
+        <tr>
+            <td colspan="4">
+                <p>
+                    I/We have enclosed   
+            
+                    <select class="enclosed-certificate">
+                        <option value="" selected="">-- Please select --</option>
+                        <option value="28">Copy of certificate of Registration issued in the country where the applicant is located, duly attested by 'Apostille' or by Indian embassy/High Commission/Consulate in the country where the applicant is located or authorised officials of overseas branches of Scheduled Banks registered in India</option>
+                        <option value="29">Copy of certificate of registration with the competent authority in India</option>
+                        <option value="30">Copy of approval issued by the competent authority in India</option>
+                    </select>
+
+                    as proof of address and
+
+                    <select>
+                        <option value="">--Please Select-- </option>
+                        <option value="1"> Copy of PAN card</option>
+                        <option value="2"> Copy of PAN allotment letter</option>
+                        <option value="3"> No document</option>
+                    </select>
+
+                    as proof of PAN allotted.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Whether you wish to have?        
+            </th>
+            <td>
+                <input type="radio" name="pan_option" />  Physical PAN Card & e-PAN Card
+                <input type="radio" name="pan_option"  /> Only e-PAN Card  
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Payment Details       
+            </th>
+            <td>
+                <input type="radio" name="payment_option"  /> Online Payment
+            </td>
+        </tr>
+        <tr>
+            <th>
+                For Paperless PAN Application
+            </th>
+            <td>
+                <input type="radio" name="pan_application" />  Yes
+                <input type="radio" name="pan_application"  /> No
+            </td>
+        </tr>
+        <tr>
+            <th>
+                DSC <select name="authorize_signature">
+                    <option value="AP">Authorized Signatory</option>
+                </select>
+            </th>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <th>
+              Upload Signature
+            </th>
+            <td>
+                <input type="file" name="upload_signature" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                Upload Document
+            </th>
+            <td>
+                <input type="file" name="upload_document" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                ALREADY UPLOADED SIGNATURE:
+            </th>
+            <td>
+                <input type="text" name="upload_signature" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                ALREADY UPLOADED DOCUMENTS:
+            </th>
+            <td>
+                <textarea rows="5" col="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"  class="submit-td">
+                <input type="submit" /> 
+            </td>
+        </tr>
+    </table>
+</ol>
+</div>
+</body>
+</html>
